@@ -13,6 +13,7 @@
 }
 
 
+
 header {
   background-color: black;
   color: white;
@@ -21,21 +22,19 @@ header {
   text-align: center;
 }
 
-header h1 {
+header>h1 {
   margin: 0;
   font-family: var(--fontetitulo);
-  font-size: 40px;
+  font-size: 10vw;
+  font-variant: small-caps;
 }
 
-header span {
-  font-family: var(--fontetitulo);
-  font-size: 50px;
-}
 
 header p {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
+
 }
 
 header a {
@@ -55,24 +54,51 @@ body {
 main {
   background-color: white;
   margin: auto;
-  max-width: 700px;
+  width: 100%;
 }
 
 main pre {
+  font-size: 3vw;
   font-family: var(--fonteconteudo);
-  font-size: 30px;
-  padding: 10px;
+  padding-left: 30px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
 }
 
 #primeiro {
   margin: 10px;
 }
 
+#segundo {
+  padding-top: 0;
+}
+
+section {
+  box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.542);
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+section#joaninha {
+  background: gray url('../imagens/background001.jpg') right center no-repeat fixed;
+  background-size: cover;
+
+}
+
+section#jornal {
+  background: gray url('../imagens/background002.jpg') right center no-repeat fixed;
+  background-size: cover;
+}
+
 section pre {
   background-color: rgba(0, 0, 0, 0.718);
-  width: max-content;
-  margin-left: 10px;
+  display: inline-block;
   color: white;
+  font-size: 3vw;
+  padding: 10px;
+  text-shadow: 2px 2px 0px black;
+
 }
 
 
